@@ -16,7 +16,7 @@ public class Profile {
     	    	
     }
     
-    @FindBy(xpath="//div[@class='text-dark-2 font-weight-600']")
+    @FindBy(xpath="//span[@class='d-none d-md-inline-block']")
     WebElement profileName;
     
     public WebElement profileName() {

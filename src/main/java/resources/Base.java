@@ -14,10 +14,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
-
-    public WebDriver initializeBrowser() throws IOException {
+  public Properties prop; 
+    public WebDriver initializeDriver() throws IOException {
 		
-		WebDriver driver = null;
+		WebDriver driver=null;
 		
 		Properties prop = new Properties();
 		String propertiesPath = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties";
