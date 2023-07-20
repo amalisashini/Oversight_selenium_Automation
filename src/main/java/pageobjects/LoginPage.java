@@ -15,7 +15,6 @@ public class LoginPage {
 	
 	}
 	
-	
 	@FindBy(xpath="//input[@name='username']")
 	WebElement emailAddressTextField;
 	

@@ -15,13 +15,12 @@ import resources.Base;
 public class LoginTest extends Base {
 
    WebDriver driver;
-   
-	
+
 	@Test(dataProvider="getLoginData")
 	public void login(String email, String password, String expectedResult) throws IOException, InterruptedException {
 
-	    driver = initializeDriver();
-		driver.get(prop.getProperty("consumerurl"));	
+		driver = initializeDriver();
+		driver.get(prop.getProperty("consumerurl"));
 	
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.emailAddressTextField().sendKeys(email);

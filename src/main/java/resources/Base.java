@@ -14,12 +14,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
-  public Properties prop; 
+	WebDriver driver;
+	public Properties prop;
+ 
     public WebDriver initializeDriver() throws IOException {
 		
-		WebDriver driver=null;
-		
-		Properties prop = new Properties();
+		prop = new Properties();
 		String propertiesPath = System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties";
 		FileInputStream fis = new FileInputStream(propertiesPath);
 		prop.load(fis);
