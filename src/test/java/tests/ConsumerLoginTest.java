@@ -12,7 +12,7 @@ import pageobjects.LoginPage;
 import pageobjects.Profile;
 import resources.Base;
 
-public class LoginTest extends Base {
+public class ConsumerLoginTest extends Base {
 
    WebDriver driver;
 
