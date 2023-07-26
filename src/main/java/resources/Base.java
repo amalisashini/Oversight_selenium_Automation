@@ -14,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 
-	WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
  
     public WebDriver initializeDriver() throws IOException {
